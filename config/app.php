@@ -31,10 +31,10 @@ return [
 	'database' => [
 		'default' => [
 			'driver' => 'mysql',
-			'database' => ienv('DATABASE_DEFAULT_DATABASE', 'docker_0xiang_cn'),
+			'database' => ienv('DATABASE_DEFAULT_DATABASE', ''),
 			'host' => ienv('DATABASE_DEFAULT_HOST', '127.0.0.1'),
-			'username' => ienv('DATABASE_DEFAULT_USERNAME', 'docker_0xiang_cn'),
-			'password' => ienv('DATABASE_DEFAULT_PASSWORD', 'SmmjTSFfbMi7jjaE'),
+			'username' => ienv('DATABASE_DEFAULT_USERNAME', ''),
+			'password' => ienv('DATABASE_DEFAULT_PASSWORD', ''),
 			'charset' => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix' => 'ims_',
