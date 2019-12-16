@@ -1,0 +1,24 @@
+[2019-12-03 09:21:36] [workid:0 coid:19] stack.DEBUG: Uncaught Exception Error: "Call to undefined method W7\Core\Database\DatabaseManager::table()" at /www/wwwroot/docker.0xiang.cn/app/Model/Common/AuthGroup.php line 176 {"exception":"[object] (Error(code: 0): Call to undefined method W7\\Core\\Database\\DatabaseManager::table() at /www/wwwroot/docker.0xiang.cn/app/Model/Common/AuthGroup.php:176)
+[stacktrace]
+#0 /www/wwwroot/docker.0xiang.cn/app/Controller/Admin/AuthController.php(63): W7\\App\\Model\\Common\\AuthGroup->setAuthGroupStatus(Array)
+#1 [internal function]: W7\\App\\Controller\\Admin\\AuthController->authStatusSave(Object(W7\\Http\\Message\\Server\\Request))
+#2 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Middleware/ControllerMiddleware.php(42): call_user_func_array(Array, Array)
+#3 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Middleware/MiddlewareHandler.php(64): W7\\Core\\Middleware\\ControllerMiddleware->process(Object(W7\\Http\\Message\\Server\\Request), Object(W7\\Core\\Middleware\\MiddlewareHandler))
+#4 /www/wwwroot/docker.0xiang.cn/app/Middleware/AfterMiddleware.php(19): W7\\Core\\Middleware\\MiddlewareHandler->handle(Object(W7\\Http\\Message\\Server\\Request))
+#5 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Middleware/MiddlewareHandler.php(64): W7\\App\\Middleware\\AfterMiddleware->process(Object(W7\\Http\\Message\\Server\\Request), Object(W7\\Core\\Middleware\\MiddlewareHandler))
+#6 /www/wwwroot/docker.0xiang.cn/app/Middleware/BeforeMiddleware.php(88): W7\\Core\\Middleware\\MiddlewareHandler->handle(Object(W7\\Http\\Message\\Server\\Request))
+#7 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Middleware/MiddlewareHandler.php(64): W7\\App\\Middleware\\BeforeMiddleware->process(Object(W7\\Http\\Message\\Server\\Request), Object(W7\\Core\\Middleware\\MiddlewareHandler))
+#8 /www/wwwroot/docker.0xiang.cn/app/Middleware/BaseMiddleware.php(20): W7\\Core\\Middleware\\MiddlewareHandler->handle(Object(W7\\Http\\Message\\Server\\Request))
+#9 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Middleware/MiddlewareHandler.php(64): W7\\App\\Middleware\\BaseMiddleware->process(Object(W7\\Http\\Message\\Server\\Request), Object(W7\\Core\\Middleware\\MiddlewareHandler))
+#10 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Http/Session/Middleware/SessionMiddleware.php(30): W7\\Core\\Middleware\\MiddlewareHandler->handle(Object(W7\\Http\\Message\\Server\\Request))
+#11 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Middleware/MiddlewareHandler.php(64): W7\\Http\\Session\\Middleware\\SessionMiddleware->process(Object(W7\\Http\\Message\\Server\\Request), Object(W7\\Core\\Middleware\\MiddlewareHandler))
+#12 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Dispatcher/RequestDispatcher.php(70): W7\\Core\\Middleware\\MiddlewareHandler->handle(Object(W7\\Http\\Message\\Server\\Request))
+#13 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Http/Listener/RequestListener.php(53): W7\\Core\\Dispatcher\\RequestDispatcher->dispatch(Object(W7\\Http\\Message\\Server\\Request), Object(W7\\Http\\Message\\Server\\Response))
+#14 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Http/Listener/RequestListener.php(30): W7\\Http\\Listener\\RequestListener->dispatch(Object(Swoole\\Http\\Server), Object(Swoole\\Http\\Request), Object(Swoole\\Http\\Response))
+#15 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Dispatcher/EventDispatcher.php(35): W7\\Http\\Listener\\RequestListener->run(Object(Swoole\\Http\\Server), Object(Swoole\\Http\\Request), Object(Swoole\\Http\\Response))
+#16 /www/wwwroot/docker.0xiang.cn/vendor/illuminate/events/Dispatcher.php(347): W7\\Core\\Dispatcher\\EventDispatcher->W7\\Core\\Dispatcher\\{closure}(Object(Swoole\\Http\\Server), Object(Swoole\\Http\\Request), Object(Swoole\\Http\\Response))
+#17 /www/wwwroot/docker.0xiang.cn/vendor/illuminate/events/Dispatcher.php(196): Illuminate\\Events\\Dispatcher->Illuminate\\Events\\{closure}('request', Array)
+#18 /www/wwwroot/docker.0xiang.cn/vendor/w7/rangine/Src/Core/Server/ServerAbstract.php(206): Illuminate\\Events\\Dispatcher->dispatch('request', Array)
+#19 {main}
+"} []
+

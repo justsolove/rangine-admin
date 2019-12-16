@@ -1,0 +1,963 @@
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: default create connection , count 0. busy count 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:12] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:12] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:21:31] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:21:36] [workid:0 co/task:19] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:21:36] [workid:0 co/task:19] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:21:36] [workid:0 co/task:19] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: connection default, select * from `ims_admin` [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: connection default, select * from `ims_token` where (`client_id` = 58 and `client_type` = 1 and `platform` = 'admin') limit 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: connection default, update `ims_token` set `code` = '7b263016fe880530be4bff96932a712b', `token` = '88c1830c7052899ee8a0efae6fe09659', `token_expires` = 1577928131, `refresh` = '98714a2e5f7099b1383a34cb34700b68', `refresh_expires` = 1578014531 where `token_id` = 1438 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:24] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: connection default, select * from `ims_auth_rule` [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: connection default, select ims_m.*,count(ims_s.menu_id) children_total from `ims_menu` as `ims_m` left join `ims_menu` as `ims_s` on `ims_s`.`parent_id` = `ims_m`.`menu_id` where ims_m.module = 'admin' group by `ims_m`.`menu_id` order by `ims_m`.`parent_id` asc, `ims_m`.`sort` asc, `ims_m`.`menu_id` asc [] []
+
+
+[2019-12-03 09:22:11] [workid:0 co/task:41] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:22:12] [workid:0 co/task:51] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: default create connection , count 0. busy count 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:12] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:12] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:23:24] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:40] [workid:0 co/task:19] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:40] [workid:0 co/task:19] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:40] [workid:0 co/task:19] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:40] [workid:0 co/task:19] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:40] [workid:0 co/task:19] database.DEBUG: connection default, update `ims_auth_group` set `status` = 0 where `group_id` = 'in' [] []
+
+
+[2019-12-03 09:23:40] [workid:0 co/task:19] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:26] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:36] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:36] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:36] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:36] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:36] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:23:44] [workid:0 co/task:36] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:49] [workid:0 co/task:43] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:49] [workid:0 co/task:43] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:49] [workid:0 co/task:43] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:49] [workid:0 co/task:43] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:49] [workid:0 co/task:43] database.DEBUG: connection default, update `ims_auth_group` set `status` = 0 where `group_id` = 'in' [] []
+
+
+[2019-12-03 09:23:49] [workid:0 co/task:43] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:56] [workid:0 co/task:50] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:56] [workid:0 co/task:50] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:56] [workid:0 co/task:50] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:56] [workid:0 co/task:50] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:56] [workid:0 co/task:50] database.DEBUG: connection default, update `ims_auth_group` set `status` = 1 where `group_id` = 'in' [] []
+
+
+[2019-12-03 09:23:56] [workid:0 co/task:50] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:58] [workid:0 co/task:57] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:58] [workid:0 co/task:57] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:23:58] [workid:0 co/task:57] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:23:58] [workid:0 co/task:57] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:23:58] [workid:0 co/task:57] database.DEBUG: connection default, update `ims_auth_group` set `status` = 0 where `group_id` = 'in' [] []
+
+
+[2019-12-03 09:23:58] [workid:0 co/task:57] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:64] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:74] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:74] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:74] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:74] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:74] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:24:00] [workid:0 co/task:74] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:04] [workid:0 co/task:81] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:04] [workid:0 co/task:81] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:24:04] [workid:0 co/task:81] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:04] [workid:0 co/task:81] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:04] [workid:0 co/task:81] database.DEBUG: connection default, update `ims_auth_group` set `status` = 0 where `group_id` = 'in' [] []
+
+
+[2019-12-03 09:24:04] [workid:0 co/task:81] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:88] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:98] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:98] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:98] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:98] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:98] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:24:06] [workid:0 co/task:98] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:34] [workid:0 co/task:105] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:34] [workid:0 co/task:105] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:24:34] [workid:0 co/task:105] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:24:34] [workid:0 co/task:105] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:24:34] [workid:0 co/task:105] database.DEBUG: connection default, update `ims_auth_group` set `status` = 0 where `group_id` = 'in' [] []
+
+
+[2019-12-03 09:24:34] [workid:0 co/task:105] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:27:12] [workid:0 co/task:112] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: default create connection , count 0. busy count 1 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:29:06] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: default create connection , count 0. busy count 1 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:32:12] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:34:07] [workid:0 co/task:12] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:37:12] [workid:0 co/task:22] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:39:06] [workid:0 co/task:32] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: default create connection , count 0. busy count 1 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:42:12] [workid:0 co/task:2] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:44:06] [workid:0 co/task:13] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:45:12] [workid:0 co/task:23] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:18] [workid:0 co/task:33] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:18] [workid:0 co/task:33] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:18] [workid:0 co/task:33] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:18] [workid:0 co/task:33] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:18] [workid:0 co/task:33] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:45:18] [workid:0 co/task:33] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: connection default, select * from `ims_auth_group` [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: connection default, update `ims_auth_group` set `sort` = 54 where `group_id` = 1 [] []
+
+
+[2019-12-03 09:45:21] [workid:0 co/task:40] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: connection default, select * from `ims_auth_group` [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: connection default, update `ims_auth_group` set `sort` = 55 where `group_id` = 1 [] []
+
+
+[2019-12-03 09:45:25] [workid:0 co/task:57] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:74] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:84] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:84] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:84] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:84] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:84] database.DEBUG: connection default, select * from `ims_auth_group` order by `group_id` asc [] []
+
+
+[2019-12-03 09:45:30] [workid:0 co/task:84] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:44] [workid:0 co/task:91] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:44] [workid:0 co/task:91] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:45:44] [workid:0 co/task:91] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:45:44] [workid:0 co/task:91] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:45:44] [workid:0 co/task:91] database.DEBUG: connection default, select * from `ims_auth_group` [] []
+
+
+[2019-12-03 09:45:44] [workid:0 co/task:91] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:47:12] [workid:0 co/task:105] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:49:06] [workid:0 co/task:115] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:50:30] [workid:0 co/task:125] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: connection default, select * from `ims_token` where `token` = '88c1830c7052899ee8a0efae6fe09659' limit 1 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 58 limit 1 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 58) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 58 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:52:12] [workid:0 co/task:135] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:54:06] [workid:0 co/task:145] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: connection default, select * from `ims_token` where `token` = 'e81a69c9c3c896a0a42db8e5479fda6f' limit 1 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: connection default, select `create_time` from `ims_admin` where `admin_id` = 57 limit 1 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: default get by queue , count 1 [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: connection default, select ims_m.type,COUNT(*) total from `ims_message` as `ims_m` left join (select * from `ims_message_user` where `admin_id` = 57) as `ims_u` on `ims_m`.`message_id` = `ims_u`.`message_id` where `ims_m`.`status` = 1 and `ims_m`.`is_delete` = 0 and `ims_m`.`create_time` >= 1483200000 and `ims_u`.admin_id IS NULL OR `ims_u`.admin_id = 57 and `ims_u`.admin_id IS NULL OR `ims_u`.is_delete = 0 and `ims_u`.admin_id IS NOT NULL OR `ims_m`.member = 2 group by `ims_m`.`type` [] []
+
+
+[2019-12-03 09:55:30] [workid:0 co/task:155] database.DEBUG: default release push connection , count 1. busy count 0 [] []
+
+
